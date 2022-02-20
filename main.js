@@ -52,6 +52,11 @@ request.onload=function(){
       const h1=document.createElement('h1');
       h1.textContent=movie.title;
       
+      const movieImg=document.createElement('img');
+      movieImg.setAttribute('class','movie-img')
+      movieImg.src=movie.image;
+      
+      
       //create p element to show movie description
       
       const p=document.createElement('p');
@@ -60,6 +65,7 @@ request.onload=function(){
       
       container.appendChild(card);
       card.appendChild(h1);
+      card.appendChild(movieImg);
       card.appendChild(p);
       
       
@@ -67,7 +73,7 @@ request.onload=function(){
       
       
    console.log(movie.title);
-   console.log(movie.description);
+   console.log(movie.image);
  })
   }else{
     console.log('error');

@@ -65,6 +65,22 @@ body {
  font-size: 30px;
  text-align: center;
 }
+.movie-img{
+  max-width: 100%;
+  display: block;
+  margin: 5px;
+  height: 200px;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 10px;
+ 
+  background: lightgray;
+ 
+}
+
+img{
+  border-radius: 10px;
+}
 
 
 @media(min-width:700px){
